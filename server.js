@@ -5,7 +5,7 @@ import { Server } from 'socket.io'
 
 // ! Variables/Constantes
 const app = express()
-const PORT = 8080 
+const PORT = process.env.PORT || 8080 
 let clienteConectado = 0
 
 const mensajes = [
